@@ -1,0 +1,69 @@
+/* Background Image */
+body{
+    background: linear-gradient(skyblue,lightblue,royalblue,blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+ 
+/* Transparent Layer */
+.a{
+   background-color: rgba(100, 100, 100, 0.5);
+   width: 50%;
+   display: inline-block;
+   border: 2px solid purple;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin: 100px 200px 200px 200px;
+}
+
+/* Textbox Styling */
+.b{
+   background-color: rgba(150, 150, 150, 0.5);
+   width: 70%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid white;
+   border-radius: 4px;
+   box-sizing: border-box;
+   text-emphasis-color: white;
+} 
+
+/* Heading Styling */
+h1{
+    color: maroon; 
+    text-align: center;
+    text-decoration: solid;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* File And Radio Button Styling */
+.c{
+    color: rgba(150, 150, 150, 0.5);
+    word-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 275px;
+}
+
+ /* Button Styling */
+.button{
+    color: white;
+    background-color: dodgerblue;
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+ /* Button Hover Styling */
+input[type=button]:hover {
+   background-color: green;
+
+}

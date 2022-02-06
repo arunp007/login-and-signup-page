@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+   <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+  <center>
+  <div class="a">
+ <form action=""> 
+   <h1>LOGIN</h1>
+   <center>
+   <input class="b" type="text" placeholder="Email/Username"><br><br>
+   <input class="b" type="password" placeholder="Password"><br><br>
+   <div class="c">
+   <input type="checkbox" checked>Remember me?<br><br>
+  </div>
+ <input  class="button" type="button" value="LOGIN"><br><br>
+ <h2>Not a member? <a href="{% static 'html/signup.html' %}"> Sign Up</a></h2>
+  </center>
+  </center>
+ </form>
+  </div>
+  
+</body>
+</html>
