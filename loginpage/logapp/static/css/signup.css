@@ -1,5 +1,5 @@
-/* Background Image */
-body{
+ /* Background Image */
+ body{
     background: linear-gradient(skyblue,lightblue,royalblue,blue);
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,10 +10,8 @@ body{
 .a{
    background-color: rgba(100, 100, 100, 0.5);
    width: 50%;
-   display: inline-block;
    border: 2px solid purple;
    border-radius: 4px;
-   box-sizing: border-box;
    margin: 100px 200px 200px 200px;
 }
 
@@ -21,13 +19,10 @@ body{
 .b{
    background-color: rgba(150, 150, 150, 0.5);
    width: 70%;
-   padding: 12px 20px;
+   padding: 10px 10px;
    margin: 8px 0;
-   display: inline-block;
    border: 1px solid white;
    border-radius: 4px;
-   box-sizing: border-box;
-   text-emphasis-color: white;
 } 
 
 /* Heading Styling */
@@ -40,7 +35,7 @@ h1{
     text-align: center;
 }
 
-/* File And Radio Button Styling */
+/* File And Radio */
 .c{
     color: rgba(150, 150, 150, 0.5);
     word-spacing: 2px;
@@ -53,12 +48,11 @@ h1{
     color: white;
     background-color: dodgerblue;
     width: 70%;
-    padding: 12px 20px;
+    padding: 11px 15px;
     margin: 8px 0;
-    display: inline-block;
     border: 1px solid white;
     border-radius: 4px;
-    box-sizing: border-box;
+   
 
 }
 
@@ -66,4 +60,8 @@ h1{
 input[type=button]:hover {
    background-color: green;
 
+}
+
+input[type=reset]:hover {
+    background-color: red;
 }
