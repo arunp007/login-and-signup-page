@@ -14,16 +14,49 @@
  <form action="" method="get"> 
    <h1>LOGIN</h1>
    <center>
-   <input class="b" type="text" placeholder="Email/Username"><br><br>
-   <input class="b" type="password" placeholder="Password"><br><br>
+   <input class="b" type="text" placeholder="Email/Username" id="emailid">
+   <label id="email_error"></label><br><br>
+   <input class="b" type="password" placeholder="Password" id="password">
+   <label id="password_error"></label><br><br>
    <div class="c">
    <input type="checkbox" checked>Remember me?<br><br>
    </div>
-   <input  class="button" type="button" value="LOGIN"><br><br>
+   <input  class="button" type="button" value="LOGIN" onclick="validation()" style="width: 470px;"><br><br>
    <h2>Not a member? <a href="{% static 'html/signup.html' %}"> Sign Up</a></h2>
    </center>
    </center>
  </form>
    </div>
+   <script>
+     function validation(){
+        email = document.getElementById('emailid')
+        pass = document.getElementById('password')
+  
+        if(email.value == ""){
+          document.getElementById('emailid').style.borderColor="red"
+          document.getElementById('email_error').innerHTML="*** Please Enter Your Email Id ***"
+          document.getElementById('email_error').style.color="red"
+          document.getElementById('email_error').style.display="block"
+        }
+  
+        else{
+          document.getElementById('emailid').style.borderColor="black"
+          document.getElementById('email_error').style.display="none"
+        }
+  
+        if(pass.value == ""){
+          document.getElementById('password').style.borderColor="red"
+          document.getElementById('password_error').innerHTML="*** Please Enter Your Password ***"
+          document.getElementById('password_error').style.color="red"
+          document.getElementById('password_error').style.display="block"
+        }
+  
+        else{
+          document.getElementById('password').style.borderColor="black"
+          document.getElementById('password_error').style.display="none"
+        }
+    }
+
+   </script>
  </body>
 </html>
