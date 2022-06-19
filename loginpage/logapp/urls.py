@@ -3,5 +3,6 @@ from.import views
 
 urlpatterns=[
 
-    path('log',views.log)
+    path('log',views.log),
+    path('signup', views.signup, name = 'signup')
 ]

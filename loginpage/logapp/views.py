@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def log(request):
     return render(request, 'login.html')
+
+def signup(request):
+    return render(request, 'signup.html')

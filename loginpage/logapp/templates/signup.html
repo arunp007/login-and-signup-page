@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="{% static 'css/signup_style.css' %}">
+    <script src="{% static 'javascript/signup_valid.js' %}"></script>
+</head>
+<body>
+    <center>
+    <div class="a">
+        <form action="" method="get">
+         <h1>SIGN UP</h1>
+          <center>
+          <input type="text" class="b" placeholder="Username" id="username"><br>
+            <label id="user_error"></label>
+          <input type="text" class="b" placeholder="Email" id="emailid"><br>
+            <label id="email_error"></label>
+          <input type="password" class="b" placeholder="Password" id="password"><br>
+            <label id="password_error"></label>
+          <input type="password" class="b" placeholder="Confirm Password" id="confirmpass"><br>
+            <label id="cpass_error"></label>
+          <input type="number" class="b" placeholder="Age" id="age"><br>
+            <label id="age_error"></label>
+          <input type="text" class="b" placeholder="Date Of Birth" id="birthdate"><br>
+            <label id="birth_error"></label><br>
+          <div class="c">
+          <input type="file" id="file"><br><label id="file_error"></label><br>
+          <input type="radio"  id="gender" name="gender" value="male">Male<input type="radio"  id="gender" name="gender" value="female">Female<input type="radio"  id="gender" name="gender" value="others">Others<br><br>
+          </div>
+          <select name="State" id="state" class="b">
+             <option value="1">State</option>
+            <option value="1">Kerala</option>
+            <option value="2">Tamil Nadu</option>
+            <option value="3">Karnataka</option>
+          </select><br><br><br>
+          <input class="button" type="button" value="SIGNUP" onclick="validation()"><br>
+          <input class="button" type="reset"  type="button1" value="RESET"><br><br><br><br>
+     </center>  
+     </form>
+     </div>
+    </center>
+</body>
+</html>
+
+
+
+

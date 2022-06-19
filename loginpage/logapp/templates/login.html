@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-   <link rel="stylesheet" href="{% static 'css/login.css' %}">
+   <link rel="stylesheet" href="{% static 'css/login_style.css' %}">
+   <script src="{% static 'javascript/login_valid.js' %}"></script>
 </head>
 <body>
   <center>
@@ -22,41 +23,10 @@
    <input type="checkbox" checked>Remember me?<br><br>
    </div>
    <input  class="button" type="button" value="LOGIN" onclick="validation()" style="width: 470px;"><br><br>
-   <h2>Not a member? <a href="{% static 'html/signup.html' %}"> Sign Up</a></h2>
+   <h2>Not a member? <a href="{% url 'signup' %}"> Sign Up</a></h2>
    </center>
    </center>
  </form>
    </div>
-   <script>
-     function validation(){
-        email = document.getElementById('emailid')
-        pass = document.getElementById('password')
-  
-        if(email.value == ""){
-          document.getElementById('emailid').style.borderColor="red"
-          document.getElementById('email_error').innerHTML="*** Please Enter Your Email Id ***"
-          document.getElementById('email_error').style.color="red"
-          document.getElementById('email_error').style.display="block"
-        }
-  
-        else{
-          document.getElementById('emailid').style.borderColor="black"
-          document.getElementById('email_error').style.display="none"
-        }
-  
-        if(pass.value == ""){
-          document.getElementById('password').style.borderColor="red"
-          document.getElementById('password_error').innerHTML="*** Please Enter Your Password ***"
-          document.getElementById('password_error').style.color="red"
-          document.getElementById('password_error').style.display="block"
-        }
-  
-        else{
-          document.getElementById('password').style.borderColor="black"
-          document.getElementById('password_error').style.display="none"
-        }
-    }
-
-   </script>
  </body>
 </html>
